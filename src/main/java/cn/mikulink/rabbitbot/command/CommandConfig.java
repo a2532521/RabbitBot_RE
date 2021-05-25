@@ -115,11 +115,14 @@ public class CommandConfig {
         return commandMap.getOrDefault(commandStr.toLowerCase(), null);
     }
 
+    /**
+     * 初始化 指令 头
+     * @return
+     */
     public String[] initCommandHeads() {
-        String[] heads = new String[]{
+        return  new String[]{
 //                "#", "$", "!", "！", ""
-                "."
+            "."
         };
-        return heads;
     }
 }
